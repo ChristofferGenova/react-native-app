@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from "react-native";
+import Simples from './componentes/Simples';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.f40}>
-          App! HIHIHI
-        </Text>
+        <Simples texto='Recebendo um valor e exibindo'></Simples>
       </View>
-    )
-  }
-}
+    );
+  };
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
-  },
-  f40: {
-    fontSize: 40
   }
-})
+});
