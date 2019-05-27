@@ -6,7 +6,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Simples texto='Recebendo um valor e exibindo'></Simples>
+        <Simples texto='Testando Styles'></Simples>
       </View>
     );
   };
