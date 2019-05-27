@@ -1,6 +1,6 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import Padrao from '../estilo/Padrao';
+import React from 'react'
+import { View, Text } from 'react-native'
+import Padrao from '../estilo/Padrao'
 
 function parOuImpar(num){
     //Operador ternário
