@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "874370006525",
+    "firebase_url": "https://reactapp-d6edd.firebaseio.com",
+    "project_id": "reactapp-d6edd",
+    "storage_bucket": "reactapp-d6edd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874370006525:android:aa9525b278a86ed1",
+        "android_client_info": {
+          "package_name": "com.exercicios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874370006525-789bqcn4o7dpd1840o301q1c4ptb7v0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTdZUsBmTzRk9wLMyPlFWCluCiN9BRpGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874370006525-789bqcn4o7dpd1840o301q1c4ptb7v0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
