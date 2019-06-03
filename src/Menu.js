@@ -8,8 +8,12 @@ import Contador from './componentes/Contador'
 import Plataformas from './componentes/Plataformas'
 import ValidarProps from './componentes/ValidarProps'
 import Evento from './componentes/Evento'
+import Avo from './componentes/ComunicacaoDireta'
 
 export default createDrawerNavigator({
+    Avo: {
+        screen: () => <Avo nome='Jao' sobrenome='Silva'></Avo>
+    },
     Evento: {
         screen: () => <Evento></Evento>,
         navigationOptions: { title: 'Evento' }
