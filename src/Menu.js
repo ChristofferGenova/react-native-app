@@ -10,12 +10,17 @@ import ValidarProps from './componentes/ValidarProps'
 import Evento from './componentes/Evento'
 import Avo from './componentes/ComunicacaoDireta'
 import { TextoSincronizado } from './componentes/ComunicacaoIndireta'
+import ListaFlex from './componentes/ListaFlex'
 
 export default createDrawerNavigator(
   {
+    ListaFlex: {
+        screen: () => <ListaFlex></ListaFlex>,
+        navigationOptions: { title: "Lista de Alunos" }
+    },
     TextoSincronizado: {
       screen: () => <TextoSincronizado></TextoSincronizado>,
-      navigationOptions: { title: 'Comunicação Indireta Callback' }
+      navigationOptions: { title: "Comunicação Indireta Callback" }
     },
     Avo: {
       screen: () => <Avo nome="Jao" sobrenome="Silva" />
