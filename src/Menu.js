@@ -9,38 +9,46 @@ import Plataformas from './componentes/Plataformas'
 import ValidarProps from './componentes/ValidarProps'
 import Evento from './componentes/Evento'
 import Avo from './componentes/ComunicacaoDireta'
+import { TextoSincronizado } from './componentes/ComunicacaoIndireta'
 
-export default createDrawerNavigator({
+export default createDrawerNavigator(
+  {
+    TextoSincronizado: {
+      screen: () => <TextoSincronizado></TextoSincronizado>,
+      navigationOptions: { title: 'Comunicação Indireta Callback' }
+    },
     Avo: {
-        screen: () => <Avo nome='Jao' sobrenome='Silva'></Avo>
+      screen: () => <Avo nome="Jao" sobrenome="Silva" />
     },
     Evento: {
-        screen: () => <Evento></Evento>,
-        navigationOptions: { title: 'Evento' }
+      screen: () => <Evento />,
+      navigationOptions: { title: "Evento" }
     },
     ValidarProps: {
-        screen: () => <ValidarProps ano={18}></ValidarProps>,
-        navigationOptions: { title: 'Validar Propriedade' }
+      screen: () => <ValidarProps ano={18} />,
+      navigationOptions: { title: "Validar Propriedade" }
     },
     Plataforma: {
-        screen: () => <Plataformas></Plataformas>,
-        navigationOptions: { title: 'Testar Notificação' }
-    },    
+      screen: () => <Plataformas />,
+      navigationOptions: { title: "Testar Notificação" }
+    },
     Contador: {
-        screen: () => <Contador></Contador>
+      screen: () => <Contador />
     },
     MegaSena: {
-        screen: () => <MegaSena numeros={8}></MegaSena>,
-        navigationOptions: { title: 'Mega Sena' }
+      screen: () => <MegaSena numeros={8} />,
+      navigationOptions: { title: "Mega Sena" }
     },
     Inverter: {
-        screen: () => <Inverter texto='Christoffer'></Inverter>
+      screen: () => <Inverter texto="Christoffer" />
     },
     ParImpar: {
-        screen: () => <ParImpar numero={32}></ParImpar>,
-        navigationOptions: { title: 'Par ou Ímpar' }
+      screen: () => <ParImpar numero={32} />,
+      navigationOptions: { title: "Par ou Ímpar" }
     },
     Simples: {
-        screen: () => <Simples texto='Teste'></Simples>
+      screen: () => <Simples texto="Teste" />
     }
-}, { drawerWidth: 300 })
+  },
+  { drawerWidth: 300 }
+);
