@@ -27,15 +27,20 @@ const itemEstilo = {
     height: 50,
     backgroundColor: '#DDD',
     corderWidth: 0.5,
-    borderColor: '#222'
+    borderColor: '#222',
+
+    //Propriedades flex
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
 }
 
 export const Aluno = props => {
     return(
         <View style={itemEstilo}>
-        <Text>Nome: {props.nome}</Text>
-        <Text style={{fontWeight: 'bold'}}>Nota: {props.nota}</Text>
-    </View>
+            <Text>Nome: {props.nome}</Text>
+            <Text style={{fontWeight: 'bold'}}>Nota: {props.nota}</Text>
+        </View>
     )
 }
 
